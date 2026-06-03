@@ -1,0 +1,57 @@
+# Unity generated files
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+
+# Unity generated project files
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.log
+
+# IDE and OS noise
+/.vs/
+/.vscode/
+/.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Unity Recorder / Asset Store tools
+/[Rr]ecordings/
+/Assets/AssetStoreTools/
+
+# VS solution filters / Unity editor artifacts
+*.slnx
+
+# Exported packages
+*.unitypackage
+
+# Env files (if you use them)
+.env
+.env.*
+
+# result
+results
+
+# ML model artifacts (not tracked)
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.tfevents*
+
+*.code-workspace
