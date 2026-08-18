@@ -98,16 +98,13 @@ public class TurtleAgent : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        float goralPosX_normalized = _goal.localPosition.x / 5f; // 将目标位置的X坐标归一化到[-1, 1]范围内
-        float goralPosZ_normalized = _goal.localPosition.z / 5f;
+
 
         float turtlePosX_normalized = transform.localPosition.x / 5f; // 将海龟位置的X坐标归一化到[-1, 1]范围内
         float turtlePosZ_normalized = transform.localPosition.z / 5f;
 
         float turtleRotation_normalized = (transform.localRotation.eulerAngles.y / 360f )* 2f - 1f; // 将海龟的旋转角度归一化到[-1, 1]范围内
 
-        sensor.AddObservation(goralPosX_normalized); // 添加目标位置的X坐标
-        sensor.AddObservation(goralPosZ_normalized); // 添加目标位置的Z坐标
         sensor.AddObservation(turtlePosX_normalized); // 添加海龟位置的X坐标
         sensor.AddObservation(turtlePosZ_normalized); // 添加海龟位置的Z坐标
         sensor.AddObservation(turtleRotation_normalized); // 添加海龟的旋转角度
